@@ -38,7 +38,7 @@ namespace RayTracing
 		}
 
 		// 计算光线与物体的交点以及该物体
-		const auto& pointAndEntity = getIntersection(ray);
+		const auto pointAndEntity = getIntersection(ray);
 		const Entity* collidedEntityPtr = pointAndEntity.second;
 
 		// 递归结束条件：光线没有照射到物体上
